@@ -1,0 +1,42 @@
+
+---Downloaded files---
+The import files for: Brabus Demo Import were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://dev.marketing.raro-co.com
+Data file = /home4/rarococo/public_html/dev-marketing-raro/wp-content/uploads/2022/01/demo-content-import-file_2022-01-25__21-41-30.xml
+Widget file = /home4/rarococo/public_html/dev-marketing-raro/wp-content/uploads/2022/01/demo-widgets-import-file_2022-01-25__21-41-30.json
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Imported
+Recent Posts - No Title - Imported
+Recent Comments - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Meta - No Title - Imported
+
+Footer 1 : 
+
+Text - No Title - Imported
+
+Footer 2 : 
+
+Text - No Title - Imported
+
+Footer 3 : 
+
+Text - No Title - Imported
+
+
+
+---ocdi/after_import---
+

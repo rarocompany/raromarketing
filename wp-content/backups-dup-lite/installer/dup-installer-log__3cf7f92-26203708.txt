@@ -1,0 +1,466 @@
+********************************************************************************
+* DUPLICATOR-PRO: Install-Log
+* STEP-1 START @ 04:45:24
+* VERSION: 1.4.3
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+PACKAGE INFO________ CURRENT SERVER                         |ORIGINAL SERVER
+PHP VERSION_________: 7.4.27                                |7.4.20
+OS__________________: Linux                                 |WINNT
+CREATED_____________: 2022-01-26 20:37:08
+WP VERSION__________: 5.9
+DUP VERSION_________: 1.4.3
+DB__________________: 5.6.41
+DB TABLES___________: 18
+DB ROWS_____________: 2,099
+DB FILE SIZE________: 3.52MB
+********************************************************************************
+SERVER INFO
+PHP_________________: 7.4.20 | SAPI: apache2handler
+PHP MEMORY__________: 4294967296 | SUHOSIN: disabled
+SERVER______________: Apache/2.4.48 (Win64) OpenSSL/1.1.1k PHP/7.4.20
+DOC ROOT____________: "C:/xampp/htdocs/marketing"
+DOC ROOT 755________: true
+LOG FILE 644________: true
+REQUEST URL_________: "http://localhost/marketing/dup-installer/main.installer.php"
+********************************************************************************
+USER INPUTS
+ARCHIVE ACTION______: "donothing"
+ARCHIVE ENGINE______: "ziparchive"
+SET DIR PERMS_______: 0
+DIR PERMS VALUE_____: 644
+SET FILE PERMS______: 0
+FILE PERMS VALUE____: 755
+SAFE MODE___________: "0"
+LOGGING_____________: "1"
+CONFIG MODE_________: "NEW"
+FILE TIME___________: "current"
+********************************************************************************
+
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/xampp/htdocs/marketing/20220126_raromarketingdev_[HASH]_20220126203708_archive.zip"
+SIZE________________: 121.81MB
+
+PRE-EXTRACT-CHECKS
+- PASS: Apache '.htaccess' not found - no backup needed.
+- PASS: Microsoft IIS 'web.config' not found - no backup needed.
+- PASS: WordFence '.user.ini' not found - no backup needed.
+BEFORE EXTRACION ACTIONS
+MAINTENANCE MODE ENABLE
+
+
+START ZIP FILE EXTRACTION STANDARD >>> 
+
+--------------------------------------
+ARCHIVE SETUP
+--------------------------------------
+NAME________________: "C:/xampp/htdocs/marketing/20220126_raromarketingdev_[HASH]_20220126203708_archive.zip"
+SIZE________________: 121.81MBFile timestamp set to Current: 2022-01-27 16:46:15
+<<< ZipArchive Unzip Complete: true
+--------------------------------------
+POST-EXTACT-CHECKS
+--------------------------------------
+
+PERMISSION UPDATES: None Applied
+
+STEP-1 COMPLETE @ 04:46:15 - RUNTIME: 51.9117 sec.
+
+
+
+********************************************************************************
+* DUPLICATOR-LITE INSTALL-LOG
+* STEP-2 START @ 04:49:18
+* NOTICE: Do NOT post to public sites or forums!!
+********************************************************************************
+USER INPUTS
+VIEW MODE___________: "basic"
+DB ACTION___________: "empty"
+DB HOST_____________: "**OBSCURED**"
+DB NAME_____________: "**OBSCURED**"
+DB PASS_____________: "**OBSCURED**"
+DB PORT_____________: "**OBSCURED**"
+NON-BREAKING SPACES_: false
+MYSQL MODE__________: "DEFAULT"
+MYSQL MODE OPTS_____: ""
+CHARSET_____________: "utf8"
+COLLATE_____________: "utf8_general_ci"
+COLLATE FB__________: false
+VIEW CREATION_______: true
+STORED PROCEDURE____: true
+FUNCTION CREATION___: true
+********************************************************************************
+
+--------------------------------------
+DATABASE-ENVIRONMENT
+--------------------------------------
+MYSQL VERSION:	This Server: 10.4.19 -- Build Server: 5.6.41
+FILE SIZE:	dup-database__[HASH].sql (2.17MB)
+TIMEOUT:	5000
+MAXPACK:	1048576
+SQLMODE:	NO_ZERO_IN_DATE,NO_ZERO_DATE,NO_ENGINE_SUBSTITUTION
+NEW SQL FILE:	[C:/xampp/htdocs/marketing/dup-installer/dup-installer-data__[HASH].sql]
+COLLATE FB:	Off
+--------------------------------------
+DATABASE RESULTS
+--------------------------------------
+DB VIEWS:	enabled
+DB PROCEDURES:	enabled
+DB FUNCTIONS:	enabled
+ERRORS FOUND:	0
+DROPPED TABLES:	18
+RENAMED TABLES:	0
+QUERIES RAN:	171
+
+rhy_commentmeta: (0)
+rhy_comments: (1)
+rhy_duplicator_packages: (0)
+rhy_links: (0)
+rhy_options: (343)
+rhy_postmeta: (698)
+rhy_posts: (95)
+rhy_term_relationships: (12)
+rhy_term_taxonomy: (177)
+rhy_termmeta: (0)
+rhy_terms: (177)
+rhy_usermeta: (36)
+rhy_users: (1)
+rhy_yoast_indexable: (271)
+rhy_yoast_indexable_hierarchy: (47)
+rhy_yoast_migrations: (23)
+rhy_yoast_primary_term: (0)
+rhy_yoast_seo_links: (116)
+Removed '109' cache/transient rows
+
+INSERT DATA RUNTIME: 1.0658 sec.
+STEP-2 COMPLETE @ 04:49:19 - RUNTIME: 1.0720 sec.
+
+====================================
+SET SEARCH AND REPLACE LIST
+====================================
+
+
+********************************************************************************
+DUPLICATOR PRO INSTALL-LOG
+STEP-3 START @ 04:49:51
+NOTICE: Do NOT post to public sites or forums
+********************************************************************************
+CHARSET SERVER:	"utf8"
+CHARSET CLIENT:	"utf8"
+********************************************************************************
+OPTIONS:
+blogname______________: "Raro Marketing"
+postguid______________: false
+fullsearch____________: false
+path_old______________: "/home4/rarococo/public_html/dev-marketing-raro"
+path_new______________: "C:/xampp/htdocs/marketing"
+siteurl_______________: "http://localhost/marketing"
+url_old_______________: "https://dev.marketing.raro-co.com"
+url_new_______________: "http://localhost/marketing"
+maxSerializeStrlen____: 4000000
+replaceMail___________: false
+dbcharset_____________: "utf8"
+dbcollate_____________: "utf8_general_ci"
+wp_mail_______________: ""
+wp_nickname___________: ""
+wp_first_name_________: ""
+wp_last_name__________: ""
+ssl_admin_____________: false
+cache_wp______________: false
+cache_path____________: false
+exe_safe_mode_________: false
+config_mode___________: "NEW"
+********************************************************************************
+
+
+====================================
+RUN SEARCH AND REPLACE
+====================================
+
+EVALUATE TABLE: "rhy_commentmeta"_________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "rhy_comments"____________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_duplicator_packages"_________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "rhy_links"_______________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "rhy_options"_____________________________________[ROWS:   343][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_postmeta"____________________________________[ROWS:   698][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_posts"_______________________________________[ROWS:    95][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_term_relationships"__________________________[ROWS:    12][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_term_taxonomy"_______________________________[ROWS:   177][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_termmeta"____________________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "rhy_terms"_______________________________________[ROWS:   177][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_usermeta"____________________________________[ROWS:    36][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_users"_______________________________________[ROWS:     1][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_yoast_indexable"_____________________________[ROWS:   271][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_yoast_indexable_hierarchy"___________________[ROWS:    47][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_yoast_migrations"____________________________[ROWS:    23][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+
+EVALUATE TABLE: "rhy_yoast_primary_term"__________________________[ROWS:     0][PG:   0][SCAN:no columns  ]
+
+EVALUATE TABLE: "rhy_yoast_seo_links"_____________________________[ROWS:   116][PG:   1][SCAN:text columns]
+	SEARCH  1:"/home4/rarococo/public_html/dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  2:"\/home4\/rarococo\/public_html\/dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  3:"%2Fhome4%2Frarococo%2Fpublic_html%2Fdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  4:"\home4\rarococo\public_html\dev-marketing-raro" ==> "C:/xampp/htdocs/marketing"
+	SEARCH  5:"\\home4\\rarococo\\public_html\\dev-marketing-raro" => "C:\/xampp\/htdocs\/marketing"
+	SEARCH  6:"%5Chome4%5Crarococo%5Cpublic_html%5Cdev-marketing-raro" => "C%3A%2Fxampp%2Fhtdocs%2Fmarketing"
+	SEARCH  7:"//dev.marketing.raro-co.com" =====================> "//localhost/marketing"
+	SEARCH  8:"\/\/dev.marketing.raro-co.com" ===================> "\/\/localhost\/marketing"
+	SEARCH  9:"%2F%2Fdev.marketing.raro-co.com" =================> "%2F%2Flocalhost%2Fmarketing"
+	SEARCH 10:"https://localhost/marketing" =====================> "http://localhost/marketing"
+	SEARCH 11:"https:\/\/localhost\/marketing" ==================> "http:\/\/localhost\/marketing"
+	SEARCH 12:"https%3A%2F%2Flocalhost%2Fmarketing" =============> "http%3A%2F%2Flocalhost%2Fmarketing"
+--------------------------------------
+SCANNED:	Tables:18 	|	 Rows:1997 	|	 Cells:24042 
+UPDATED:	Tables:4 	|	 Rows:390 	|	 Cells:517 
+ERRORS:		0 
+RUNTIME:	0.245700 sec
+
+====================================
+REMOVE LICENSE KEY
+====================================
+
+====================================
+CREATE NEW ADMIN USER
+====================================
+
+====================================
+CONFIGURATION FILE UPDATES
+====================================
+	UPDATE DB_NAME "** OBSCURED **"
+	UPDATE DB_USER "** OBSCURED **"
+	UPDATE DB_PASSWORD "** OBSCURED **"
+	UPDATE DB_HOST ""localhost""
+	REMOVE WPCACHEHOME
+	
+*** UPDATED WP CONFIG FILE ***
+
+====================================
+HTACCESS UPDATE MODE: "NEW"
+====================================
+- PASS: Successfully created a new .htaccess file.
+- PASS: Existing Apache '.htaccess__[HASH]' was removed
+
+====================================
+GENERAL UPDATES & CLEANUP
+====================================
+
+====================================
+DEACTIVATE PLUGINS CHECK
+====================================
+Deactivated plugins list here: Array
+(
+    [0] => really-simple-ssl/rlrsssl-really-simple-ssl.php
+    [1] => simple-google-recaptcha/simple-google-recaptcha.php
+    [2] => js_composer/js_composer.php
+)
+
+deactivate js_composer/js_composer.php
+Plugin(s) listed here are deactivated: js_composer/js_composer.php
+Plugin(s) reactivated after installation: js_composer/js_composer.php
+MAINTENANCE MODE DISABLE
+
+====================================
+NOTICES TEST
+====================================
+No General Notices Found
+
+
+====================================
+CLEANUP TMP FILES
+====================================
+
+====================================
+FINAL REPORT NOTICES
+====================================
+
+STEP-3 COMPLETE @ 04:49:51 - RUNTIME: 0.3507 sec. 
+
+
+====================================
+FINAL REPORT NOTICES LIST
+====================================
+-----------------------
+[INFO] Info
+	SECTIONS: general
+	LONG MSG:             The following is a list of notices that may need to be fixed in order to finalize your setup. These values should only be investigated if you're running into
+            issues with your site. For more details see the <a href="https://codex.wordpress.org/Editing_wp-config.php" target="_blank">WordPress Codex</a>.
+
+-----------------------
+[INFO] No errors in database
+	SECTIONS: database
+
+-----------------------
+[INFO] No search and replace data errors
+	SECTIONS: search_replace
+
+-----------------------
+[INFO] No files extraction errors
+	SECTIONS: files
+
+-----------------------
+[WARNING] Deactivated Plugin:  WPBakery Page Builder
+	SECTIONS: general
+	LONG MSG: This plugin is deactivated automatically, because it requires a reacivation to work properly.  <b>Please reactivate from the WordPress admin panel after logging in.</b> This will re-enable your site's frontend.
+
+====================================
