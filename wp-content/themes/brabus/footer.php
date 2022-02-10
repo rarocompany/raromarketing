@@ -17,7 +17,7 @@ if ( !$copyright ) {
   <div class="footer-quote wow fadeIn">
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-10">
           <?php
           if ( !brabus_get_option( 'footer_hide_logo' ) ) {
             $logo = ( brabus_get_option( 'footer_logo' ) ) ? brabus_get_option( 'footer_logo' ) : get_template_directory_uri() . '/images/logo.png';
