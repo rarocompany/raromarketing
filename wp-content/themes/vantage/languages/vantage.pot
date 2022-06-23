@@ -1026,7 +1026,7 @@ msgstr ""
 msgid "None"
 msgstr ""
 
-#: inc/gallery.php:125
+#: inc/gallery.php:124
 msgid "Slider"
 msgstr ""
 
@@ -2219,19 +2219,19 @@ msgstr ""
 msgid "You can also read through the %sVantage documentation%s to get to know it even faster."
 msgstr ""
 
-#: inc/customizer/customizer.php:414
+#: inc/customizer/customizer.php:415
 msgid "Theme Design"
 msgstr ""
 
-#: inc/customizer/customizer.php:415
+#: inc/customizer/customizer.php:416
 msgid "Theme Specific Customizations For %s."
 msgstr ""
 
-#: inc/customizer/customizer.php:607
+#: inc/customizer/customizer.php:608
 msgid "Are you sure you want to reset your theme customizations?"
 msgstr ""
 
-#: inc/customizer/customizer.php:608
+#: inc/customizer/customizer.php:609
 msgid "Reset Customizations"
 msgstr ""
 
