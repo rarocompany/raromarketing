@@ -133,10 +133,19 @@ class HT_CTC_Admin_Woo_Page {
 
         $woo_places = [
             'select' => '-- Select --',
-            'woocommerce_after_single_product_summary' => 'After Product Summary'
+            'woocommerce_before_main_content' => 'Before Main Content',
+            'woocommerce_before_single_product' => 'Before Product',
+            'woocommerce_before_single_product_summary' => 'Before Product Summary',
+            'woocommerce_single_product_summary' => 'Product Summary',
+            'woocommerce_before_add_to_cart_form' => 'Before Add to Cart Form',
+            'woocommerce_before_add_to_cart_button' => 'Before Cart Button',
+            'woocommerce_after_add_to_cart_button' => 'After Cart Button',
+            'woocommerce_after_add_to_cart_form' => 'After Add to Cart Form',
+            'woocommerce_after_single_product' => 'After Product',
+            'woocommerce_after_single_product_summary' => 'After Product Summary',
         ];
 
-        $woo_places = apply_filters( 'ht_ctc_fh_admin_woo_places', $woo_places );
+        // $woo_places = apply_filters( 'ht_ctc_fh_admin_woo_places', $woo_places );
 
         $woo_single_position_center = ( isset( $woo_options['woo_single_position_center']) ) ? esc_attr( $woo_options['woo_single_position_center'] ) : '';
         $woo_single_layout_cart_btn = ( isset( $woo_options['woo_single_layout_cart_btn']) ) ? esc_attr( $woo_options['woo_single_layout_cart_btn'] ) : '';
@@ -204,8 +213,7 @@ class HT_CTC_Admin_Woo_Page {
 
                     if ( ! defined( 'HT_CTC_PRO_VERSION' ) ) {
                         ?>
-                        <!-- todo: docs - greetings docs.. -->
-                        <!-- <p class="description">PRO: <a target="_blank" href="https://holithemes.com/plugins/click-to-chat/woocommerce-single-product-pages/#greetings">Greetings for WooCommerce Single product pages</a></p> -->
+                        <p class="description">PRO: <a target="_blank" href="https://holithemes.com/plugins/click-to-chat/woocommerce-single-product-pages/#greetings">Greetings Settings for WooCommerce Single product pages</a></p>
                         <?php
                     }   
                     ?>
@@ -316,9 +324,11 @@ class HT_CTC_Admin_Woo_Page {
                                 <option value="99" <?= $woo_style == 99 ? 'SELECTED' : ''; ?> ><?php _e( 'Add your own image / GIF (Style-99)', 'click-to-chat-for-whatsapp' ); ?></option>
                             </select>
                             <p class="description"><a target="_blank" href="https://holithemes.com/plugins/click-to-chat/list-of-styles/?utm_source=ctc&utm_medium=admin&utm_campaign=woo"><?php _e( 'List of Styles', 'click-to-chat-for-whatsapp' ); ?></a> &emsp; | &emsp; <span><a target="_blank" href="<?= admin_url( 'admin.php?page=click-to-chat-customize-styles' ); ?>">Customize the styles</a></span> </p>
-                            <p class="description"><strong>Recommended Styles: 1, 8</strong></p>
+                            <p class="description"><strong>Recommended Styles: 1, 4, 8</strong></p>
                         </div>
                     </div>
+
+                    <p class="description ctc_init_display_none woo_single_position_settings"><a  class="open_tab" data-tab="overwrite_tab-1" href="#overwrite_tab-1" style="margin-bottom: 15px;">Prefilled, Call to action</a></p>
 
                     <p class="description ctc_init_display_none woo_single_position_settings">These styles and their position appears based on how the Theme is developed. </p>
                     <br>
@@ -385,28 +395,8 @@ class HT_CTC_Admin_Woo_Page {
 
                     </details>
                     
+
                     <p class="description" style="margin-bottom:15px;"><a target="_blank" href="https://holithemes.com/plugins/click-to-chat/add-whatsapp-in-woocommerce-single-product-pages/"><?php _e( 'Add WhatsApp in WooCommerce Single Product pages', 'click-to-chat-for-whatsapp' ); ?></a></p>
-                    <?php
-
-                    if ( ! defined( 'HT_CTC_PRO_VERSION' ) ) {
-                        ?>
-                        <p class="description">
-                            <a target="_blank" href="https://holithemes.com/plugins/click-to-chat/pricing/">PRO</a><br>
-                            Before Main Content <br>
-                            Before Product <br>
-                            Before Product Summary <br>
-                            Product Summary <br>
-                            Before Add to Cart Form <br>
-                            Before Cart Button <br>
-                            After Cart Button <br>
-                            After Add to Cart Form <br>
-                            After Product <br>
-                        </p>
-                        <?php
-                    }
-
-                    ?>
-
                     <br><br>
                 </div>
             </div>

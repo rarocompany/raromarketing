@@ -4,9 +4,9 @@ Contributors: rwattner, dgovea
 Donate Link: https://www.paypal.me/StickyHeaderEffects
 Tags: Elementor, Elementor Page Builder, Elements, Elementor Add-ons, Add-ons, Page Builder, Widgets, Briefcasewp
 Requires at least: 4.9.0
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 5.4
-Stable tag: 1.4.8
+Stable tag: 1.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -91,31 +91,47 @@ Sticky Header Options for Elementor is light-weight and you can also use only th
 
 == Changelog ==
 
+= 1.5.3 =
+- Fixed: Gap above mobile header bug
+
+= 1.5.2 =
+- Fixed: Gap above header bug
+
+= 1.5.1 =
+- Fixed: Wordpress admin bar bug
+
+= 1.5 =
+- Fixed: Gap above header bug
+
+= 1.4.9 =
+- Added: Compatibility with Elementor Containers
+- Maintenance: Wordpress 6.0 compatibility update
+
 = 1.4.8 =
-Maintenance: Wordpress 5.8 compatibility update
+- Maintenance: Wordpress 5.9 compatibility update
 
 = 1.4.7 =
-Fixed: Misc Bugs
+- Fixed: Misc Bugs
 
 = 1.4.6 =
-Fixed: Hide header bug
+- Fixed: Hide header bug
 
 = 1.4.5 =
-Fixed: WP admin bar bug
+- Fixed: WP admin bar bug
 
 = 1.4.4 =
-Maintenance: Wordpress 5.8 compatibility update
-Fixed: Header width bug
-Update: Better responsive Worspress admin bar handling
+- Maintenance: Wordpress 5.8 compatibility update
+- Fixed: Header width bug
+- Update: Better responsive Worspress admin bar handling
 
 = 1.4.3 =
-Fixed: Full color logo after scroll bug
+- Fixed: Full color logo after scroll bug
 
 = 1.4.2 =
-Fixed: Bugs
+- Fixed: Bugs
 
 = 1.4.1 =
-Fixed: Gap above header bug
+- Fixed: Gap above header bug
 
 = 1.4.0 =
 - Added: Wordpress 5.5 compatibility
@@ -174,8 +190,24 @@ Fixed: Gap above header bug
 
 == Upgrade Notice ==
 
+= 1.5.3 =
+Fixed: Gap above mobile header bug
+
+= 1.5.2 =
+Fixed: Gap above header bug
+
+= 1.5.1 =
+Fixed: Wordpress admin bar bug
+
+= 1.5 =
+Fixed: Gap above header bug
+
+= 1.4.9 =
+Added: Compatibility with Elementor Containers
+Maintenance: Wordpress 6.0 compatibility update
+
 = 1.4.8 =
-Maintenance: Wordpress 5.8 compatibility update
+Maintenance: Wordpress 5.9 compatibility update
 
 = 1.4.7 =
 Fixed: Misc Bugs

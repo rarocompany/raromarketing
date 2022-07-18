@@ -3,15 +3,18 @@
     // ready
     $(function () {
 
+        console.log('greetings.js');
+
         if (document.querySelector('.pr_greetings_template')) {
             try {
                 greetings_template();
-            } catch (e) { }
+            } catch (e) {}
         }
+
         if (document.querySelector('.ctc-admin-greetings-page') || document.querySelector('.ctc-admin-woo-page')) {
             try {
                 editor();
-            } catch (e) { }
+            } catch (e) {}
         }
 
         /**
@@ -91,10 +94,11 @@
 
 
         /**
+         * tinymce editor
          * only on greetings, woo pages
+         *  bg color
          */
         function editor() {
-            // tinymce editor - bg color
             var check = 1;
             var check_interval = 1000;
             var check_times = 28; // ( check_times * check_interval = total milliseconds )

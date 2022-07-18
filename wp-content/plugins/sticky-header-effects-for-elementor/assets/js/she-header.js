@@ -15,7 +15,7 @@ HEADER EFFECTS
 function sheHeader() {
 		
 	var header = $j('.she-header-yes'),
-		container = $j('.she-header-yes .elementor-container'),
+		container = $j('.she-header-yes .elementor-container, .she-header-yes.e-container'),
 		header_elementor = $j('.elementor-edit-mode .she-header-yes'),
 		header_logo = $j('.she-header-yes .elementor-widget-theme-site-logo img, .she-header-yes .elementor-widget-image img'),
 		data_settings = header.data('settings');

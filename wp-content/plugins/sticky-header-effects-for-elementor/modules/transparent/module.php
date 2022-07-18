@@ -565,6 +565,20 @@ $element->add_control(
 			]
 		);
 
+		$element->add_control(
+			'hide_header_notice',
+			[
+				'raw' => __('WARNING: This might break section/container entrance animations', 'she-header'),
+				'type' => Controls_Manager::RAW_HTML,
+				'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
+				'condition' => [
+					
+					'hide_header' => 'yes',
+					'transparent!' => '',
+				],
+			]
+		);
+
 		$element->add_responsive_control(
 			'scroll_distance_hide_header',
 			[
@@ -610,6 +624,13 @@ $element->add_control(
 		}else{
 		add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts' ] );
 		}
+
+		if( is_plugin_active( 'elementor-pro/elementor-pro.php' ) ) {
+			add_action( 'elementor/element/container/section_effects/after_section_end', [ $this, 'register_controls' ] );
+			} else {
+			add_action( 'elementor/element/container/section_advanced/after_section_end', [ $this, 'register_controls' ] );
+			}
+
 	}
 
 	public function enqueue_styles() {

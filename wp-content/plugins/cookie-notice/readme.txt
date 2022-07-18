@@ -2,9 +2,9 @@
 Contributors: humanityco
 Tags: gdpr, ccpa, cookies, consent, compliance
 Requires at least: 4.3
-Requires PHP: 5.3
+Requires PHP: 5.4
 Tested up to: 6.0
-Stable tag: 2.3.0
+Stable tag: 2.3.1
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -120,6 +120,10 @@ Yes! The plugin + web appliaction version includes technical compliance features
 4. Cookie Compliance settings
 
 == Changelog ==
+
+= 2.3.1 =
+* New: Option to run consent banner in debug mode
+* Fix: Invalid validation of dismissable notices
 
 = 2.3.0 =
 * New: Compliance Multi-license pricing options
@@ -419,6 +423,6 @@ Initial release
 
 == Upgrade Notice ==
 
-= 2.3.0 =
-* New: Compliance Multi-license pricing options
-* Tweak: WordPress 6.0 compatibility
+= 2.3.1 =
+* New: Option to run consent banner in debug mode
+* Fix: Invalid validation of dismissable notices

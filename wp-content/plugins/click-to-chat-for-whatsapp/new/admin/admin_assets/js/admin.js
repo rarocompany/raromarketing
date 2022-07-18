@@ -550,9 +550,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 'ht_ctc_show_hide_settings',
                 'ht_ctc_woo_1',
                 'ht_ctc_woo_shop',
-                'ht_ctc_woo_cart',
-                'ht_ctc_woo_checkout',
-                'ht_ctc_woo_myaccount',
+                'ctc_g_opt_in',
             ];
 
             var default_active = [

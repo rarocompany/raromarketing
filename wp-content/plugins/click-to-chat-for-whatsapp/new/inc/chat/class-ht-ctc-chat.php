@@ -130,6 +130,8 @@ class HT_CTC_Chat {
         
         // number
         $number = (isset($options['number'])) ? esc_attr($options['number']) : '';
+        $call_to_action = (isset($options['call_to_action'])) ? __(esc_attr($options['call_to_action']) , 'click-to-chat-for-whatsapp' ) : '';
+        $pre_filled = (isset($options['pre_filled'])) ? __(esc_attr($options['pre_filled']) , 'click-to-chat-for-whatsapp' ) : '';
 
         // safe side action .. if number not saved in new method
         if ( '' == $number ) {
@@ -142,11 +144,11 @@ class HT_CTC_Chat {
         $ht_ctc_chat['number'] = apply_filters( 'wpml_translate_single_string', $ht_ctc_chat['number'], 'Click to Chat for WhatsApp', 'number' );
 
         // call to action
-        $ht_ctc_chat['call_to_action'] = (isset($ht_ctc_pagelevel['call_to_action'])) ? esc_attr($ht_ctc_pagelevel['call_to_action']) : __( esc_attr( $options['call_to_action'] ) , 'click-to-chat-for-whatsapp' );
+        $ht_ctc_chat['call_to_action'] = (isset($ht_ctc_pagelevel['call_to_action'])) ? esc_attr($ht_ctc_pagelevel['call_to_action']) : $call_to_action;
         $ht_ctc_chat['call_to_action'] = apply_filters( 'wpml_translate_single_string', $ht_ctc_chat['call_to_action'], 'Click to Chat for WhatsApp', 'call_to_action' );
 
         // prefilled text
-        $ht_ctc_chat['pre_filled'] = (isset($ht_ctc_pagelevel['pre_filled'])) ? esc_attr($ht_ctc_pagelevel['pre_filled']) : __( esc_attr( $options['pre_filled'] ) , 'click-to-chat-for-whatsapp' );
+        $ht_ctc_chat['pre_filled'] = (isset($ht_ctc_pagelevel['pre_filled'])) ? esc_attr($ht_ctc_pagelevel['pre_filled']) : $pre_filled;
         $ht_ctc_chat['pre_filled'] = apply_filters( 'wpml_translate_single_string', $ht_ctc_chat['pre_filled'], 'Click to Chat for WhatsApp', 'pre_filled' );
 
         // wa: wa.me  /  web: web/api.whatsapp,  
@@ -281,7 +283,7 @@ class HT_CTC_Chat {
          * 
          *  dont load if its an AMP page or if no greetings dialog selected
          */
-        if ( false == $is_amp && isset($greetings['greetings_template']) && 'no' !== $greetings['greetings_template'] ) {
+        if ( false == $is_amp ) {
             include HT_CTC_PLUGIN_DIR .'new/inc/greetings/class-ht-ctc-chat-greetings.php';
         }
 

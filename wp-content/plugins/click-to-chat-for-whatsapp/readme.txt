@@ -1,9 +1,9 @@
 === Click to Chat ===
 Requires at least: 4.6
-Tested up to: 6.0.1
+Tested up to: 6.0
 Requires PHP: 5.6
 Contributors: holithemes
-Stable tag: 3.9.7
+Stable tag: 3.10
 Tags: whatsapp, whatsapp business, click to chat, whatsapp chat, whatsapp support, whatsapp group, whatsapp message, WhatsApp WooCommerce, whatsapp wordpress, whatsapp floating button, whatsapp icon, holithemes
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -113,10 +113,6 @@ Additional variables, specific to WooCommerce single product page to change valu
 
 = Add WhatsApp in WooCommerce Product pages = 
 
-* After product summary
-
-PRO:
-
 * Before Main Content
 * Before Product
 * Before Product Summary
@@ -126,6 +122,7 @@ PRO:
 * After Cart Button
 * After Add to Cart Form
 * After Product
+* After product summary
 
 [Add WhatsApp Icon/Button in WooCommerce Product pages](https://holithemes.com/plugins/click-to-chat/add-whatsapp-in-woocommerce-single-product-pages/)
 
@@ -502,6 +499,21 @@ plugin will update automatically when new version is released
 After Activate the plugin, add WhatsApp Number at plugin settings.
 
 == Changelog ==
+
+= 3.10 =
+* More position to Add WhatsApp at WooCommerce Single product pages
+
+= 3.9.11 =
+* Fix: compatibility issues
+
+= 3.9.10 =
+* Fix: uncaught error at Greetings page
+
+= 3.9.9 =
+* Enchantment: opt-in, greetings features
+
+= 3.9.8 =
+* Enchantment: Admin Greetings page
 
 = 3.9.7 =
 * New: opt-in - user consent before initiate the chat

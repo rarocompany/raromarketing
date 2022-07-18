@@ -20,7 +20,7 @@ $(function () {
             cart_layout();
         } else if (document.querySelector('.ctc_woo_place')) {
             //  && !document.querySelector('.ctc_woo_schedule')
-            // in shop page - cart button might not exists, dispay (might be added display none)
+            // in shop page - cart button might not exists, display (might be added display none)
             console.log('woo ctc_woo_place show');
             display_ctc_woo_place();
         }
@@ -30,6 +30,9 @@ $(function () {
 
     function display_ctc_woo_place() {
         if (!document.querySelector('.ctc_woo_schedule')) {
+            $('.ctc_woo_place').css({
+                "display": $('.ctc_woo_place').attr('data-dt')
+            });
             $('.ctc_woo_place').show();
         }
     }

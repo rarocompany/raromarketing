@@ -12,6 +12,8 @@ if (isset( $ht_ctc_greetings) && isset( $ht_ctc_greetings['opt_in'])) {
   $opt_in = $ht_ctc_greetings['opt_in'];
 }
 
+// $opt_id = (isset($opt_in_id)) ? $opt_in_id : 'ctc_opt';
+
 ?>
 <div class="ctc_opt_in" style="display:none;">
     <div class="ctc_opt" style="display:inline-flex;justify-content:center;align-items:center;padding:0 4px;">

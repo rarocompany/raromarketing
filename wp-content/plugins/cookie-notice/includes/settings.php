@@ -286,6 +286,7 @@ class Cookie_Notice_Settings {
 			add_settings_section( 'cookie_notice_configuration', __( 'Miscellaneous Settings', 'cookie-notice' ), array( $this, 'cn_section_configuration' ), 'cookie_notice_options' );
 			add_settings_field( 'cn_app_blocking', __( 'Autoblocking', 'cookie-notice' ), array( $this, 'cn_app_blocking' ), 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_hide_banner', __( 'Hide for logged in', 'cookie-notice' ), array( $this, 'cn_hide_banner' ), 'cookie_notice_options', 'cookie_notice_configuration' );
+			add_settings_field( 'cn_debug_mode', __( 'Debug mode', 'cookie-notice' ), array( $this, 'cn_debug_mode' ), 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_app_purge_cache', __( 'Cache', 'cookie-notice' ), array( $this, 'cn_app_purge_cache' ), 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_script_placement', __( 'Script placement', 'cookie-notice' ), array( $this, 'cn_script_placement' ), 'cookie_notice_options', 'cookie_notice_configuration' );
 			add_settings_field( 'cn_deactivation_delete', __( 'Deactivation', 'cookie-notice' ), array( $this, 'cn_deactivation_delete' ), 'cookie_notice_options', 'cookie_notice_configuration' );
@@ -438,6 +439,16 @@ class Cookie_Notice_Settings {
 		echo '
 		<fieldset>
 			<label for="cn_hide_banner"><input id="cn_hide_banner" type="checkbox" name="cookie_notice_options[hide_banner]" value="1" ' . checked( true, Cookie_Notice()->options['general']['hide_banner'], false ) . ' />' . __( 'Enable to hide the consent banner for logged in users.', 'cookie-notice' ) . '</label>
+		</fieldset>';
+	}
+	
+	/**
+	 * Debug mode.
+	 */
+	public function cn_debug_mode() {
+		echo '
+		<fieldset>
+			<label for="cn_debug_mode"><input id="cn_debug_mode" type="checkbox" name="cookie_notice_options[debug_mode]" value="1" ' . checked( true, Cookie_Notice()->options['general']['debug_mode'], false ) . ' />' . __( 'Enable to run the consent banner in debug mode.', 'cookie-notice' ) . '</label>
 		</fieldset>';
 	}
 
@@ -841,6 +852,9 @@ class Cookie_Notice_Settings {
 			
 			// hide banner
 			$input['hide_banner'] = (bool) isset( $input['hide_banner'] );
+			
+			// debug mode
+			$input['debug_mode'] = (bool) isset( $input['debug_mode'] );
 			
 			// position
 			$input['position'] = sanitize_text_field( isset( $input['position'] ) && in_array( $input['position'], array_keys( $this->positions ) ) ? $input['position'] : $cn->defaults['general']['position'] );

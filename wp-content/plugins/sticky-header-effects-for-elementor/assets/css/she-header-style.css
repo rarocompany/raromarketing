@@ -22,8 +22,15 @@ Header Style
 	transform: all 0.4 sease-in-out, height 0.4s ease-in-out, background-color 0.4s ease-in-out, border-bottom-width 0.4s ease-in-out, border-bottom-color 0.4s ease-in-out !important;
 }
 
-.admin-bar .she-header {
-	top: 32px !important;
+
+
+@media screen and (min-width: 783px) {
+	/* .admin-bar .she-header-transparent-sticky-yes,
+	.admin-bar .she-header-transparent-yes,
+.admin-bar .she-header-yes, */
+	.admin-bar .she-header {
+			top: 32px !important;
+	}
 }
 
 .she-header {

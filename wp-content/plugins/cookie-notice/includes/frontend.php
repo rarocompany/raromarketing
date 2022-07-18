@@ -89,6 +89,10 @@ class Cookie_Notice_Frontend {
 			'blocking' => (bool) ( ! is_user_logged_in() ? Cookie_Notice()->options['general']['app_blocking'] : false )
 		) );
 		
+		if ( Cookie_Notice()->options['general']['debug_mode'] ) {
+			$options['debugMode'] = true;
+		}
+		
 		// message output
 		$output = '
 		<!-- Hu Banner -->
@@ -241,7 +245,7 @@ class Cookie_Notice_Frontend {
 	 */
 	public function wp_print_footer_scripts() {
 		if ( Cookie_Notice()->cookies_accepted() ) {
-			$scripts = apply_filters( 'cn_refuse_code_scripts_html', html_entity_decode( trim( wp_kses( Cookie_Notice()->options['general']['refuse_code'], Cookie_Notice()->get_allowed_html() ) ) ) );
+			$scripts = apply_filters( 'cn_refuse_code_scripts_html', html_entity_decode( trim( wp_kses( Cookie_Notice()->options['general']['refuse_code'], Cookie_Notice()->get_allowed_html() ) ) ), 'body' );
 
 			if ( ! empty( $scripts ) )
 				echo $scripts;
@@ -255,7 +259,7 @@ class Cookie_Notice_Frontend {
 	 */
 	public function wp_print_header_scripts() {
 		if ( Cookie_Notice()->cookies_accepted() ) {
-			$scripts = apply_filters( 'cn_refuse_code_scripts_html', html_entity_decode( trim( wp_kses( Cookie_Notice()->options['general']['refuse_code_head'], Cookie_Notice()->get_allowed_html() ) ) ) );
+			$scripts = apply_filters( 'cn_refuse_code_scripts_html', html_entity_decode( trim( wp_kses( Cookie_Notice()->options['general']['refuse_code_head'], Cookie_Notice()->get_allowed_html() ) ) ), 'head' );
 
 			if ( ! empty( $scripts ) )
 				echo $scripts;

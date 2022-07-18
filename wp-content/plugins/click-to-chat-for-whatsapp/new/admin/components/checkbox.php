@@ -28,4 +28,3 @@ $description = (isset($input['description'])) ? $input['description'] : '';
         ?>
     </p>
 </div>
-<?php

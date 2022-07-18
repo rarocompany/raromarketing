@@ -12,6 +12,13 @@ if ( ! class_exists( 'HT_CTC_Scripts' ) ) :
 
 class HT_CTC_Scripts {
 
+    public function __construct() {
+        $this->hooks();
+	}
+
+    public function hooks() {
+        add_action('wp_enqueue_scripts', [$this, 'register_scripts'], 1 );
+    }
 
     /**
 	 * Register styles - front end ( non admin )
@@ -73,8 +80,8 @@ class HT_CTC_Scripts {
 
 }
 
-$ht_ctc_scripts =  new HT_CTC_Scripts();
 
-add_action('wp_enqueue_scripts', array( $ht_ctc_scripts, 'register_scripts' ), 1 );
+new HT_CTC_Scripts();
+
 
 endif; // END class_exists check

@@ -30,6 +30,27 @@ class HT_CTC_Chat_Greetings {
 
         $ht_ctc_greetings = array();
 
+        $ht_ctc_greetings['greetings_template'] = ( isset( $greetings['greetings_template']) ) ? esc_attr( $greetings['greetings_template'] ) : '';
+        $ht_ctc_greetings['header_content'] = ( isset( $greetings['header_content']) ) ? esc_attr($greetings['header_content']) : '';
+        $ht_ctc_greetings['main_content'] = ( isset( $greetings['main_content']) ) ? esc_attr($greetings['main_content']) : '';
+        $ht_ctc_greetings['bottom_content'] = ( isset( $greetings['bottom_content']) ) ? esc_attr($greetings['bottom_content']) : '';
+        $ht_ctc_greetings['call_to_action'] = ( isset( $greetings['call_to_action']) ) ? esc_attr( $greetings['call_to_action'] ) : '';
+
+        $ht_ctc_greetings['is_opt_in'] = ( isset( $greetings_settings['is_opt_in']) ) ? esc_attr( $greetings_settings['is_opt_in'] ) : '';
+        $ht_ctc_greetings['opt_in'] = ( isset( $greetings_settings['opt_in']) ) ? esc_attr( $greetings_settings['opt_in'] ) : '';
+
+        if ('' == $ht_ctc_greetings['call_to_action']) {
+            $ht_ctc_greetings['call_to_action'] = 'WhatsApp';
+        }
+
+        $ht_ctc_greetings = apply_filters( 'ht_ctc_fh_greetings_start', $ht_ctc_greetings );
+
+        // return if template not set..
+        if ( '' == $ht_ctc_greetings['greetings_template'] || 'no' == $ht_ctc_greetings['greetings_template'] ) {
+            return;
+        }
+
+
         $page_id = get_the_ID();
         // $page_id = get_queried_object_id();
 
@@ -89,27 +110,6 @@ class HT_CTC_Chat_Greetings {
             $post_title = esc_html( get_the_title( $page_id ) );
         }
 
-
-        $ht_ctc_greetings['greetings_template'] = ( isset( $greetings['greetings_template']) ) ? esc_attr( $greetings['greetings_template'] ) : '';
-        $ht_ctc_greetings['header_content'] = ( isset( $greetings['header_content']) ) ? esc_attr($greetings['header_content']) : '';
-        $ht_ctc_greetings['main_content'] = ( isset( $greetings['main_content']) ) ? esc_attr($greetings['main_content']) : '';
-        $ht_ctc_greetings['bottom_content'] = ( isset( $greetings['bottom_content']) ) ? esc_attr($greetings['bottom_content']) : '';
-        $ht_ctc_greetings['call_to_action'] = ( isset( $greetings['call_to_action']) ) ? esc_attr( $greetings['call_to_action'] ) : '';
-
-        $ht_ctc_greetings['is_opt_in'] = ( isset( $greetings_settings['is_opt_in']) ) ? esc_attr( $greetings_settings['is_opt_in'] ) : '';
-        $ht_ctc_greetings['opt_in'] = ( isset( $greetings_settings['opt_in']) ) ? esc_attr( $greetings_settings['opt_in'] ) : '';
-
-        if ('' == $ht_ctc_greetings['call_to_action']) {
-            $ht_ctc_greetings['call_to_action'] = 'WhatsApp';
-        }
-
-        $ht_ctc_greetings = apply_filters( 'ht_ctc_fh_greetings_start', $ht_ctc_greetings );
-
-        // return if template not set..
-        if ( '' == $ht_ctc_greetings['greetings_template'] || 'no' == $ht_ctc_greetings['greetings_template'] ) {
-            return;
-        }
-
         $ht_ctc_greetings['header_content'] = apply_filters( 'wpml_translate_single_string', $ht_ctc_greetings['header_content'], 'Click to Chat for WhatsApp', 'greetings_header_content' );
         $ht_ctc_greetings['main_content'] = apply_filters( 'wpml_translate_single_string', $ht_ctc_greetings['main_content'], 'Click to Chat for WhatsApp', 'greetings_main_content' );
         $ht_ctc_greetings['bottom_content'] = apply_filters( 'wpml_translate_single_string', $ht_ctc_greetings['bottom_content'], 'Click to Chat for WhatsApp', 'greetings_bottom_content' );
@@ -166,7 +166,12 @@ class HT_CTC_Chat_Greetings {
             $box_shadow = '0px 0px 5px 1px rgba(0,0,0,.14)';
         }
 
+        $g_box_classes = '';
+
         if ( is_file( $ht_ctc_greetings['path'] ) ) {
+
+            $template = $ht_ctc_greetings['greetings_template'];
+            $g_box_classes = " template-$template";
             
             $script = '';
             // $script = 'dev';
@@ -190,7 +195,7 @@ class HT_CTC_Chat_Greetings {
             
             <div style="position: relative; bottom: 18px; cursor: auto;" class="ht_ctc_greetings">
 
-                <div class="ht_ctc_chat_greetings_box" style="display: none; position: absolute; bottom: 0px; <?= $g_position_r_l ?>: 0px; min-width: 300px; max-width: 400px; ">
+                <div class="ht_ctc_chat_greetings_box <?= $g_box_classes ?>" style="display: none; position: absolute; bottom: 0px; <?= $g_position_r_l ?>: 0px; min-width: 300px; max-width: 400px; ">
 
                     <span style=" cursor:pointer; float:<?= $g_position_r_l ?>;" class="ctc_greetings_close_btn">
                         <svg style="color:#ffffff; background-color:lightgray; border-radius:50%;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">

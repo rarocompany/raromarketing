@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Cookie Notice\n"
-"POT-Creation-Date: 2022-05-31 12:24+0200\n"
+"POT-Creation-Date: 2022-06-28 22:59+0200\n"
 "PO-Revision-Date: 2015-03-24 11:30+0100\n"
 "Last-Translator: Bartosz Arendt <info@dfactory.eu>\n"
 "Language-Team: dFactory <info@dfactory.eu>\n"
@@ -16,760 +16,795 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../cookie-notice.php:257
+#: ../cookie-notice.php:261
 msgid "Compliance fines exceeded &euro;1.3 BILLION in 2021. Avoid the risk by making sure your website complies with the latest cookie consent laws."
 msgstr ""
 
-#: ../cookie-notice.php:257
+#: ../cookie-notice.php:261
 msgid "Run compliance check to learn if your website complies with the latest consent record storage and cookie blocking requirements."
 msgstr ""
 
-#: ../cookie-notice.php:257
+#: ../cookie-notice.php:261 ../includes/dashboard.php:485
 msgid "Run Compliance Check"
 msgstr ""
 
-#: ../cookie-notice.php:257
+#: ../cookie-notice.php:261
 msgid "Dismiss Notice"
 msgstr ""
 
-#: ../cookie-notice.php:504
+#: ../cookie-notice.php:290
+msgid "Cookie Compliance Warning"
+msgstr ""
+
+#: ../cookie-notice.php:290
+#, php-format
+msgid "Your website has reached the <b>%1$s visits usage limit for the Cookie Compliance Free Plan</b>. Compliance services such as Consent Record Storage, Autoblocking, and Consent Analytics have been deactivated until current usage cycle ends on %2$s."
+msgstr ""
+
+#: ../cookie-notice.php:290
+#, php-format
+msgid "To reactivate compliance services now, <a href=\"%s\" target=\"_blank\">upgrade your domain to a Pro plan.</a>"
+msgstr ""
+
+#: ../cookie-notice.php:548
 msgid "Cookie Notice & Compliance - Deactivation survey"
 msgstr ""
 
-#: ../cookie-notice.php:560
+#: ../cookie-notice.php:602
 msgid "Settings"
 msgstr ""
 
-#: ../cookie-notice.php:564
+#: ../cookie-notice.php:606
 msgid "Free Upgrade"
 msgstr ""
 
-#: ../cookie-notice.php:587
+#: ../cookie-notice.php:629
 msgid "We're sorry to see you go. Could you please tell us what happened?"
 msgstr ""
 
-#: ../cookie-notice.php:591
+#: ../cookie-notice.php:633
 msgid "I couldn't figure out how to make it work."
 msgstr ""
 
-#: ../cookie-notice.php:592
+#: ../cookie-notice.php:634
 msgid "I found another plugin to use for the same task."
 msgstr ""
 
-#: ../cookie-notice.php:593
+#: ../cookie-notice.php:635
 msgid "The Cookie Compliance banner is too big."
 msgstr ""
 
-#: ../cookie-notice.php:594
+#: ../cookie-notice.php:636
 msgid "The Cookie Compliance consent choices (Silver, Gold, Platinum) are confusing."
 msgstr ""
 
-#: ../cookie-notice.php:595
+#: ../cookie-notice.php:637
 msgid "The Cookie Compliance default settings are too strict."
 msgstr ""
 
-#: ../cookie-notice.php:596
+#: ../cookie-notice.php:638
 msgid "The web application user interface is not clear to me."
 msgstr ""
 
-#: ../cookie-notice.php:597
+#: ../cookie-notice.php:639
 msgid "Support isn't timely."
 msgstr ""
 
-#: ../cookie-notice.php:598
+#: ../cookie-notice.php:640
 msgid "Other"
 msgstr ""
 
-#: ../cookie-notice.php:612
+#: ../cookie-notice.php:654
 msgid "Cancel"
 msgstr ""
 
-#: ../cookie-notice.php:613
+#: ../cookie-notice.php:655
 msgid "Deactivate"
 msgstr ""
 
-#: ../cookie-notice.php:614
+#: ../cookie-notice.php:656
 msgid "Deactivate & Submit"
 msgstr ""
 
-#: ../includes/dashboard.php:40
+#: ../includes/dashboard.php:43
 msgid "Cookie Compliance"
 msgstr ""
 
-#: ../includes/dashboard.php:146 ../includes/dashboard.php:158
-#: ../includes/dashboard.php:170
+#: ../includes/dashboard.php:149 ../includes/dashboard.php:161
+#: ../includes/dashboard.php:173
 #, php-format
 msgid "Level %s"
 msgstr ""
 
-#: ../includes/dashboard.php:250
+#: ../includes/dashboard.php:253
 msgid "Traffic Overview"
 msgstr ""
 
-#: ../includes/dashboard.php:251
+#: ../includes/dashboard.php:254
 msgid "Displays the general visits information for your domain."
 msgstr ""
 
-#: ../includes/dashboard.php:255
+#: ../includes/dashboard.php:258
 msgid "Consent Activity"
 msgstr ""
 
-#: ../includes/dashboard.php:256
+#: ../includes/dashboard.php:259
 msgid "Displays the chart of the domain consent activity in the last 30 days."
 msgstr ""
 
-#: ../includes/dashboard.php:276
+#: ../includes/dashboard.php:279
 msgid "View consent activity inside WordPress Dashboard"
 msgstr ""
 
-#: ../includes/dashboard.php:277
+#: ../includes/dashboard.php:280
 msgid "Display information about the visits."
 msgstr ""
 
-#: ../includes/dashboard.php:278
+#: ../includes/dashboard.php:281
 msgid "Get Consent logs data for the last 30 days."
 msgstr ""
 
-#: ../includes/dashboard.php:279
+#: ../includes/dashboard.php:282
 msgid "Enable consent purpose categories, automatic cookie blocking and more."
 msgstr ""
 
-#: ../includes/dashboard.php:280
+#: ../includes/dashboard.php:283
 msgid "Upgrade to Cookie Compliance"
 msgstr ""
 
-#: ../includes/dashboard.php:372
+#: ../includes/dashboard.php:375
 msgid "Total Visits"
 msgstr ""
 
-#: ../includes/dashboard.php:374
+#: ../includes/dashboard.php:377
 msgid "Last 30 days"
 msgstr ""
 
-#: ../includes/dashboard.php:377
+#: ../includes/dashboard.php:380
 msgid "Consent Logs"
 msgstr ""
 
-#: ../includes/dashboard.php:379
+#: ../includes/dashboard.php:382
 #, php-format
 msgid "Updated %s"
 msgstr ""
 
-#: ../includes/dashboard.php:397
+#: ../includes/dashboard.php:400
 msgid "Traffic Usage"
 msgstr ""
 
-#: ../includes/dashboard.php:400
+#: ../includes/dashboard.php:403
 #, php-format
 msgid "Visits usage: %1$s / %2$s"
 msgstr ""
 
-#: ../includes/dashboard.php:401
+#: ../includes/dashboard.php:404
 #, php-format
 msgid "Cycle started: %s"
 msgstr ""
 
-#: ../includes/dashboard.php:402
+#: ../includes/dashboard.php:405
 #, php-format
 msgid "Days to go: %s"
 msgstr ""
 
-#: ../includes/settings.php:48 ../includes/welcome.php:478
-msgid "Top"
+#: ../includes/dashboard.php:454
+msgid "Cookie Compliance Status"
 msgstr ""
 
-#: ../includes/settings.php:49 ../includes/welcome.php:477
-msgid "Bottom"
+#: ../includes/dashboard.php:475
+msgid "Your site does not have Cookie Compliance"
 msgstr ""
 
-#: ../includes/settings.php:53 ../includes/settings.php:99
-msgid "None"
-msgstr ""
-
-#: ../includes/settings.php:54
-msgid "Light"
-msgstr ""
-
-#: ../includes/settings.php:55
-msgid "Dark"
-msgstr ""
-
-#: ../includes/settings.php:59
-msgid "Automatic"
-msgstr ""
-
-#: ../includes/settings.php:60
-msgid "Manual"
-msgstr ""
-
-#: ../includes/settings.php:64
-msgid "Page link"
-msgstr ""
-
-#: ../includes/settings.php:65
-msgid "Custom link"
-msgstr ""
-
-#: ../includes/settings.php:74
-msgid "Banner"
-msgstr ""
-
-#: ../includes/settings.php:75 ../includes/settings.php:303
-msgid "Message"
-msgstr ""
-
-#: ../includes/settings.php:79
-msgid "Text color"
-msgstr ""
-
-#: ../includes/settings.php:80
-msgid "Button color"
-msgstr ""
-
-#: ../includes/settings.php:81
-msgid "Bar color"
-msgstr ""
-
-#: ../includes/settings.php:87
-msgid "An hour"
-msgstr ""
-
-#: ../includes/settings.php:88
-msgid "1 day"
-msgstr ""
-
-#: ../includes/settings.php:89
-msgid "1 week"
-msgstr ""
-
-#: ../includes/settings.php:90
-msgid "1 month"
-msgstr ""
-
-#: ../includes/settings.php:91
-msgid "3 months"
-msgstr ""
-
-#: ../includes/settings.php:92
-msgid "6 months"
-msgstr ""
-
-#: ../includes/settings.php:93
-msgid "1 year"
-msgstr ""
-
-#: ../includes/settings.php:94
-msgid "infinity"
-msgstr ""
-
-#: ../includes/settings.php:100
-msgid "Fade"
-msgstr ""
-
-#: ../includes/settings.php:101
-msgid "Slide"
-msgstr ""
-
-#: ../includes/settings.php:105
-msgid "Header"
-msgstr ""
-
-#: ../includes/settings.php:106
-msgid "Footer"
-msgstr ""
-
-#: ../includes/settings.php:111
-msgid "Silver"
-msgstr ""
-
-#: ../includes/settings.php:112
-msgid "Gold"
-msgstr ""
-
-#: ../includes/settings.php:113
-msgid "Platinum"
-msgstr ""
-
-#: ../includes/settings.php:116
-msgid "Private"
-msgstr ""
-
-#: ../includes/settings.php:117
-msgid "Balanced"
-msgstr ""
-
-#: ../includes/settings.php:118
-msgid "Personalized"
-msgstr ""
-
-#: ../includes/settings.php:121
-msgid "Reject All"
-msgstr ""
-
-#: ../includes/settings.php:122
-msgid "Accept Some"
-msgstr ""
-
-#: ../includes/settings.php:123
-msgid "Accept All"
-msgstr ""
-
-#: ../includes/settings.php:128
-msgid "Save my preferences"
-msgstr ""
-
-#: ../includes/settings.php:132 ../includes/settings.php:153
-#: ../includes/settings.php:305
-msgid "Privacy policy"
-msgstr ""
-
-#: ../includes/settings.php:133
-msgid "Do Not Sell"
-msgstr ""
-
-#: ../includes/settings.php:134
-msgid "Preferences"
-msgstr ""
-
-#: ../includes/settings.php:135
-msgid "We believe your data is your property and support your right to privacy and transparency."
-msgstr ""
-
-#: ../includes/settings.php:136
-msgid "Select a Data Access Level and Duration to choose how we use and share your data."
-msgstr ""
-
-#: ../includes/settings.php:137
-msgid "Highest level of privacy. Data accessed for necessary site operations only. Data shared with 3rd parties to ensure the site is secure and works on your device."
-msgstr ""
-
-#: ../includes/settings.php:138
-msgid "Balanced experience. Data accessed for content personalisation and site optimisation. Data shared with 3rd parties may be used to track and store your preferences for this site."
-msgstr ""
-
-#: ../includes/settings.php:139
-msgid "Highest level of personalisation. Data accessed to make ads and media more relevant. Data shared with 3rd parties may be use to track you on this site and other sites you visit."
-msgstr ""
-
-#: ../includes/settings.php:143
-msgid "month"
-msgstr ""
-
-#: ../includes/settings.php:144
-msgid "months"
-msgstr ""
-
-#: ../includes/settings.php:148
-msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
-msgstr ""
-
-#: ../includes/settings.php:149
-msgid "Ok"
-msgstr ""
-
-#: ../includes/settings.php:150
-msgid "No"
-msgstr ""
-
-#: ../includes/settings.php:151
-msgid "You can revoke your consent any time using the Revoke consent button."
-msgstr ""
-
-#: ../includes/settings.php:152 ../includes/settings.php:307
-msgid "Revoke consent"
-msgstr ""
-
-#: ../includes/settings.php:188 ../includes/welcome.php:401
+#: ../includes/dashboard.php:478 ../includes/settings.php:186
+#: ../includes/welcome.php:401
 msgid "Cookie Notice"
 msgstr ""
 
-#: ../includes/settings.php:188
+#: ../includes/dashboard.php:481
+msgid "Run Compliance Check to determine your site's compliance with updated data processing and consent rules under GDPR, CCPA and other international data privacy laws."
+msgstr ""
+
+#: ../includes/settings.php:46 ../includes/welcome.php:478
+msgid "Top"
+msgstr ""
+
+#: ../includes/settings.php:47 ../includes/welcome.php:477
+msgid "Bottom"
+msgstr ""
+
+#: ../includes/settings.php:51 ../includes/settings.php:97
+msgid "None"
+msgstr ""
+
+#: ../includes/settings.php:52
+msgid "Light"
+msgstr ""
+
+#: ../includes/settings.php:53
+msgid "Dark"
+msgstr ""
+
+#: ../includes/settings.php:57
+msgid "Automatic"
+msgstr ""
+
+#: ../includes/settings.php:58
+msgid "Manual"
+msgstr ""
+
+#: ../includes/settings.php:62
+msgid "Page link"
+msgstr ""
+
+#: ../includes/settings.php:63
+msgid "Custom link"
+msgstr ""
+
+#: ../includes/settings.php:72
+msgid "Banner"
+msgstr ""
+
+#: ../includes/settings.php:73 ../includes/settings.php:302
+msgid "Message"
+msgstr ""
+
+#: ../includes/settings.php:77
+msgid "Text color"
+msgstr ""
+
+#: ../includes/settings.php:78
+msgid "Button color"
+msgstr ""
+
+#: ../includes/settings.php:79
+msgid "Bar color"
+msgstr ""
+
+#: ../includes/settings.php:85
+msgid "An hour"
+msgstr ""
+
+#: ../includes/settings.php:86
+msgid "1 day"
+msgstr ""
+
+#: ../includes/settings.php:87
+msgid "1 week"
+msgstr ""
+
+#: ../includes/settings.php:88
+msgid "1 month"
+msgstr ""
+
+#: ../includes/settings.php:89
+msgid "3 months"
+msgstr ""
+
+#: ../includes/settings.php:90
+msgid "6 months"
+msgstr ""
+
+#: ../includes/settings.php:91
+msgid "1 year"
+msgstr ""
+
+#: ../includes/settings.php:92
+msgid "infinity"
+msgstr ""
+
+#: ../includes/settings.php:98
+msgid "Fade"
+msgstr ""
+
+#: ../includes/settings.php:99
+msgid "Slide"
+msgstr ""
+
+#: ../includes/settings.php:103
+msgid "Header"
+msgstr ""
+
+#: ../includes/settings.php:104
+msgid "Footer"
+msgstr ""
+
+#: ../includes/settings.php:109
+msgid "Silver"
+msgstr ""
+
+#: ../includes/settings.php:110
+msgid "Gold"
+msgstr ""
+
+#: ../includes/settings.php:111
+msgid "Platinum"
+msgstr ""
+
+#: ../includes/settings.php:114
+msgid "Private"
+msgstr ""
+
+#: ../includes/settings.php:115
+msgid "Balanced"
+msgstr ""
+
+#: ../includes/settings.php:116
+msgid "Personalized"
+msgstr ""
+
+#: ../includes/settings.php:119
+msgid "Reject All"
+msgstr ""
+
+#: ../includes/settings.php:120
+msgid "Accept Some"
+msgstr ""
+
+#: ../includes/settings.php:121
+msgid "Accept All"
+msgstr ""
+
+#: ../includes/settings.php:126
+msgid "Save my preferences"
+msgstr ""
+
+#: ../includes/settings.php:130 ../includes/settings.php:151
+#: ../includes/settings.php:304
+msgid "Privacy policy"
+msgstr ""
+
+#: ../includes/settings.php:131
+msgid "Do Not Sell"
+msgstr ""
+
+#: ../includes/settings.php:132
+msgid "Preferences"
+msgstr ""
+
+#: ../includes/settings.php:133
+msgid "We believe your data is your property and support your right to privacy and transparency."
+msgstr ""
+
+#: ../includes/settings.php:134
+msgid "Select a Data Access Level and Duration to choose how we use and share your data."
+msgstr ""
+
+#: ../includes/settings.php:135
+msgid "Highest level of privacy. Data accessed for necessary site operations only. Data shared with 3rd parties to ensure the site is secure and works on your device."
+msgstr ""
+
+#: ../includes/settings.php:136
+msgid "Balanced experience. Data accessed for content personalisation and site optimisation. Data shared with 3rd parties may be used to track and store your preferences for this site."
+msgstr ""
+
+#: ../includes/settings.php:137
+msgid "Highest level of personalisation. Data accessed to make ads and media more relevant. Data shared with 3rd parties may be use to track you on this site and other sites you visit."
+msgstr ""
+
+#: ../includes/settings.php:141
+msgid "month"
+msgstr ""
+
+#: ../includes/settings.php:142
+msgid "months"
+msgstr ""
+
+#: ../includes/settings.php:146
+msgid "We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it."
+msgstr ""
+
+#: ../includes/settings.php:147
+msgid "Ok"
+msgstr ""
+
+#: ../includes/settings.php:148
+msgid "No"
+msgstr ""
+
+#: ../includes/settings.php:149
+msgid "You can revoke your consent any time using the Revoke consent button."
+msgstr ""
+
+#: ../includes/settings.php:150 ../includes/settings.php:306
+msgid "Revoke consent"
+msgstr ""
+
+#: ../includes/settings.php:186
 msgid "Cookies"
 msgstr ""
 
-#: ../includes/settings.php:199
+#: ../includes/settings.php:197
 msgid "Cookie Notice & Compliance for GDPR/CCPA"
 msgstr ""
 
-#: ../includes/settings.php:209
+#: ../includes/settings.php:207
 msgid "Promote the privacy of your website visitors without affecting how you do your business."
 msgstr ""
 
-#: ../includes/settings.php:212 ../includes/welcome.php:196
+#: ../includes/settings.php:210 ../includes/welcome.php:196
 #: ../includes/welcome.php:237
 msgid "The next generation of Cookie Notice"
 msgstr ""
 
-#: ../includes/settings.php:214
+#: ../includes/settings.php:212
 msgid "A free web application to help you deliver better consent experiences and comply with GDPR, CCPA and other data privacy laws more effectively."
 msgstr ""
 
-#: ../includes/settings.php:217
+#: ../includes/settings.php:215
 msgid "Learn more"
 msgstr ""
 
-#: ../includes/settings.php:228
+#: ../includes/settings.php:226
 msgid "F.A.Q."
 msgstr ""
 
-#: ../includes/settings.php:232
+#: ../includes/settings.php:230
 msgid "Does the Cookie Notice make my site fully compliant with GDPR?"
 msgstr ""
 
-#: ../includes/settings.php:233
+#: ../includes/settings.php:231
 msgid "It is not possible to provide the required technical compliance features using only a WordPress plugin. Features like consent record storage, purpose categories and script blocking that bring your site into full compliance with GDPR are only available through the Cookie Compliance integration."
 msgstr ""
 
-#: ../includes/settings.php:237
+#: ../includes/settings.php:235
 msgid "Does the Cookie Compiance integration make my site fully compliant with GDPR?"
 msgstr ""
 
-#: ../includes/settings.php:238
+#: ../includes/settings.php:236
 msgid "Yes! The plugin + web application version includes technical compliance features to meet requirements for over 100 countries and legal jurisdictions."
 msgstr ""
 
-#: ../includes/settings.php:242
+#: ../includes/settings.php:240
 msgid "Is Cookie Compliance free?"
 msgstr ""
 
-#: ../includes/settings.php:243
+#: ../includes/settings.php:241
 msgid "Yes, but with limits. Cookie Compliance includes both free and paid plans to choose from depending on your needs and your website monthly traffic."
 msgstr ""
 
-#: ../includes/settings.php:247
+#: ../includes/settings.php:245
 msgid "Where can I find pricing options?"
 msgstr ""
 
-#: ../includes/settings.php:248
+#: ../includes/settings.php:246
 msgid "You can learn more about the features and pricing by visiting the Cookie Compliance website here:"
 msgstr ""
 
-#: ../includes/settings.php:265
+#: ../includes/settings.php:263
 msgid "Reset to defaults"
 msgstr ""
 
-#: ../includes/settings.php:283 ../includes/settings.php:297
+#: ../includes/settings.php:281 ../includes/settings.php:296
 msgid "Compliance Settings"
 msgstr ""
 
-#: ../includes/settings.php:284 ../includes/settings.php:298
+#: ../includes/settings.php:282 ../includes/settings.php:297
 msgid "Compliance status"
 msgstr ""
 
-#: ../includes/settings.php:285 ../includes/settings.php:299
+#: ../includes/settings.php:283 ../includes/settings.php:298
 msgid "App ID"
 msgstr ""
 
-#: ../includes/settings.php:286 ../includes/settings.php:300
+#: ../includes/settings.php:284 ../includes/settings.php:299
 msgid "App Key"
 msgstr ""
 
-#: ../includes/settings.php:288
+#: ../includes/settings.php:286
 msgid "Miscellaneous Settings"
 msgstr ""
 
-#: ../includes/settings.php:289 ../includes/settings.php:345
-#: ../includes/settings.php:360 ../includes/settings.php:375
+#: ../includes/settings.php:287 ../includes/settings.php:344
+#: ../includes/settings.php:359 ../includes/settings.php:374
 #: ../includes/welcome.php:402
 msgid "Autoblocking"
 msgstr ""
 
-#: ../includes/settings.php:290
+#: ../includes/settings.php:288
 msgid "Hide for logged in"
 msgstr ""
 
-#: ../includes/settings.php:291
+#: ../includes/settings.php:289
+msgid "Debug mode"
+msgstr ""
+
+#: ../includes/settings.php:290
 msgid "Cache"
 msgstr ""
 
-#: ../includes/settings.php:292 ../includes/settings.php:314
+#: ../includes/settings.php:291 ../includes/settings.php:313
 msgid "Script placement"
 msgstr ""
 
-#: ../includes/settings.php:293 ../includes/settings.php:315
+#: ../includes/settings.php:292 ../includes/settings.php:314
 msgid "Deactivation"
 msgstr ""
 
-#: ../includes/settings.php:302
+#: ../includes/settings.php:301
 msgid "Notice Settings"
 msgstr ""
 
-#: ../includes/settings.php:304
+#: ../includes/settings.php:303
 msgid "Button text"
 msgstr ""
 
-#: ../includes/settings.php:306
+#: ../includes/settings.php:305
 msgid "Refuse consent"
 msgstr ""
 
-#: ../includes/settings.php:308
+#: ../includes/settings.php:307
 msgid "Script blocking"
 msgstr ""
 
-#: ../includes/settings.php:309
+#: ../includes/settings.php:308
 msgid "Reloading"
 msgstr ""
 
-#: ../includes/settings.php:310
+#: ../includes/settings.php:309
 msgid "On scroll"
 msgstr ""
 
-#: ../includes/settings.php:311
+#: ../includes/settings.php:310
 msgid "On click"
 msgstr ""
 
-#: ../includes/settings.php:312
+#: ../includes/settings.php:311
 msgid "Accepted expiry"
 msgstr ""
 
-#: ../includes/settings.php:313
+#: ../includes/settings.php:312
 msgid "Rejected expiry"
 msgstr ""
 
-#: ../includes/settings.php:318
+#: ../includes/settings.php:317
 msgid "Notice Design"
 msgstr ""
 
-#: ../includes/settings.php:319
+#: ../includes/settings.php:318
 msgid "Position"
 msgstr ""
 
-#: ../includes/settings.php:320
+#: ../includes/settings.php:319
 msgid "Animation"
 msgstr ""
 
-#: ../includes/settings.php:321
+#: ../includes/settings.php:320
 msgid "Colors"
 msgstr ""
 
-#: ../includes/settings.php:322
+#: ../includes/settings.php:321
 msgid "Button class"
 msgstr ""
 
-#: ../includes/settings.php:344 ../includes/settings.php:359
-#: ../includes/settings.php:374
+#: ../includes/settings.php:343 ../includes/settings.php:358
+#: ../includes/settings.php:373
 msgid "Notice"
 msgstr ""
 
-#: ../includes/settings.php:344 ../includes/settings.php:345
-#: ../includes/settings.php:346 ../includes/settings.php:347
-#: ../includes/settings.php:359 ../includes/settings.php:374
+#: ../includes/settings.php:343 ../includes/settings.php:344
+#: ../includes/settings.php:345 ../includes/settings.php:346
+#: ../includes/settings.php:358 ../includes/settings.php:373
 msgid "Active"
 msgstr ""
 
-#: ../includes/settings.php:346 ../includes/settings.php:361
-#: ../includes/settings.php:376 ../includes/welcome.php:403
+#: ../includes/settings.php:345 ../includes/settings.php:360
+#: ../includes/settings.php:375 ../includes/welcome.php:403
 msgid "Cookie Categories"
 msgstr ""
 
-#: ../includes/settings.php:347 ../includes/settings.php:362
-#: ../includes/settings.php:377 ../includes/welcome.php:404
+#: ../includes/settings.php:346 ../includes/settings.php:361
+#: ../includes/settings.php:376 ../includes/welcome.php:404
 msgid "Proof-of-Consent"
 msgstr ""
 
-#: ../includes/settings.php:350
+#: ../includes/settings.php:349
 msgid "Log in & Configure"
 msgstr ""
 
-#: ../includes/settings.php:351
+#: ../includes/settings.php:350
 msgid "Log into the Cookie Compliance&trade; web application and configure your Privacy Experience."
 msgstr ""
 
-#: ../includes/settings.php:360 ../includes/settings.php:361
-#: ../includes/settings.php:362
+#: ../includes/settings.php:359 ../includes/settings.php:360
+#: ../includes/settings.php:361
 msgid "Pending"
 msgstr ""
 
-#: ../includes/settings.php:365
+#: ../includes/settings.php:364
 msgid "Log in & configure"
 msgstr ""
 
-#: ../includes/settings.php:366
+#: ../includes/settings.php:365
 msgid "Log into the Cookie Compliance&trade; web application and complete the setup process."
 msgstr ""
 
-#: ../includes/settings.php:375 ../includes/settings.php:376
-#: ../includes/settings.php:377
+#: ../includes/settings.php:374 ../includes/settings.php:375
+#: ../includes/settings.php:376
 msgid "Inactive"
 msgstr ""
 
-#: ../includes/settings.php:380
+#: ../includes/settings.php:379
 msgid "Add Compliance features"
 msgstr ""
 
-#: ../includes/settings.php:381
+#: ../includes/settings.php:380
 msgid "Sign up to Cookie Compliance&trade; and add GDPR, CCPA and other international data privacy laws compliance features."
 msgstr ""
 
-#: ../includes/settings.php:396
+#: ../includes/settings.php:395
 msgid "Enter your Cookie Compliance&trade; application ID."
 msgstr ""
 
-#: ../includes/settings.php:408
+#: ../includes/settings.php:407
 msgid "Enter your Cookie Compliance&trade; application secret key."
 msgstr ""
 
-#: ../includes/settings.php:418
+#: ../includes/settings.php:417
 msgid "Enable to automatically block 3rd party scripts before user consent."
 msgstr ""
 
-#: ../includes/settings.php:419
+#: ../includes/settings.php:418
 msgid "In case you're experiencing issues with your site disable that feature temporarily."
 msgstr ""
 
-#: ../includes/settings.php:430
+#: ../includes/settings.php:429
 msgid "Purge Cache"
 msgstr ""
 
-#: ../includes/settings.php:432
+#: ../includes/settings.php:431
 msgid "Click the Purge Cache button to refresh the app configuration."
 msgstr ""
 
-#: ../includes/settings.php:442
+#: ../includes/settings.php:441
 msgid "Enable to hide the consent banner for logged in users."
 msgstr ""
 
-#: ../includes/settings.php:453
+#: ../includes/settings.php:451
+msgid "Enable to run the consent banner in debug mode."
+msgstr ""
+
+#: ../includes/settings.php:462
 msgid "Enter the cookie notice message."
 msgstr ""
 
-#: ../includes/settings.php:464
+#: ../includes/settings.php:473
 msgid "The text of the option to accept the notice and make it disappear."
 msgstr ""
 
-#: ../includes/settings.php:474
+#: ../includes/settings.php:483
 msgid "Enable to give to the user the possibility to refuse third party non functional cookies."
 msgstr ""
 
-#: ../includes/settings.php:478
+#: ../includes/settings.php:487
 msgid "The text of the button to refuse the consent."
 msgstr ""
 
-#: ../includes/settings.php:496
+#: ../includes/settings.php:505
 msgid "Head"
 msgstr ""
 
-#: ../includes/settings.php:497
+#: ../includes/settings.php:506
 msgid "Body"
 msgstr ""
 
-#: ../includes/settings.php:500
+#: ../includes/settings.php:509
 msgid "The code to be used in your site header, before the closing head tag."
 msgstr ""
 
-#: ../includes/settings.php:504
+#: ../includes/settings.php:513
 msgid "The code to be used in your site footer, before the closing body tag."
 msgstr ""
 
-#: ../includes/settings.php:508
+#: ../includes/settings.php:517
 msgid "Enter non functional cookies Javascript code here (for e.g. Google Analitycs) to be used after the notice is accepted."
 msgstr ""
 
-#: ../includes/settings.php:508
+#: ../includes/settings.php:517
 msgid "To get the user consent status use the <code>cn_cookies_accepted()</code> function."
 msgstr ""
 
-#: ../includes/settings.php:519
+#: ../includes/settings.php:528
 msgid "Enable to give to the user the possibility to revoke their consent <i>(requires \"Refuse consent\" option enabled)</i>."
 msgstr ""
 
-#: ../includes/settings.php:522
+#: ../includes/settings.php:531
 msgid "Enter the revoke message."
 msgstr ""
 
-#: ../includes/settings.php:524
+#: ../includes/settings.php:533
 msgid "The text of the button to revoke the consent."
 msgstr ""
 
-#: ../includes/settings.php:532
+#: ../includes/settings.php:541
 msgid "Select the method for displaying the revoke button - automatic (in the banner) or manual using <code>[cookies_revoke]</code> shortcode."
 msgstr ""
 
-#: ../includes/settings.php:543
+#: ../includes/settings.php:552
 msgid "Enable to reload the page after the notice is accepted."
 msgstr ""
 
-#: ../includes/settings.php:566
+#: ../includes/settings.php:575
 msgid "Enable privacy policy link."
 msgstr ""
 
-#: ../includes/settings.php:569
+#: ../includes/settings.php:578
 msgid "The text of the privacy policy button."
 msgstr ""
 
-#: ../includes/settings.php:581
+#: ../includes/settings.php:590
 msgid "Select where to redirect user for more information."
 msgstr ""
 
-#: ../includes/settings.php:584
+#: ../includes/settings.php:593
 msgid "-- select page --"
 msgstr ""
 
-#: ../includes/settings.php:595
+#: ../includes/settings.php:604
 msgid "Select from one of your site's pages."
 msgstr ""
 
-#: ../includes/settings.php:601
+#: ../includes/settings.php:610
 msgid "Synchronize with WordPress Privacy Policy page."
 msgstr ""
 
-#: ../includes/settings.php:608
+#: ../includes/settings.php:617
 msgid "Enter the full URL starting with http(s)://"
 msgstr ""
 
-#: ../includes/settings.php:651
+#: ../includes/settings.php:660
 msgid "The amount of time that the cookie should be stored for when user accepts the notice."
 msgstr ""
 
-#: ../includes/settings.php:674
+#: ../includes/settings.php:683
 msgid "The amount of time that the cookie should be stored for when the user doesn't accept the notice."
 msgstr ""
 
-#: ../includes/settings.php:692
+#: ../includes/settings.php:701
 msgid "Select where all the plugin scripts should be placed."
 msgstr ""
 
-#: ../includes/settings.php:712
+#: ../includes/settings.php:721
 msgid "Select location for the notice."
 msgstr ""
 
-#: ../includes/settings.php:733
+#: ../includes/settings.php:742
 msgid "Select the animation style."
 msgstr ""
 
-#: ../includes/settings.php:744
+#: ../includes/settings.php:753
 msgid "Enable to accept the notice when user scrolls."
 msgstr ""
 
-#: ../includes/settings.php:747
+#: ../includes/settings.php:756
 msgid "Number of pixels user has to scroll to accept the notice and make it disappear."
 msgstr ""
 
-#: ../includes/settings.php:758
+#: ../includes/settings.php:767
 msgid "Enable to accept the notice on any click on the page."
 msgstr ""
 
-#: ../includes/settings.php:768
+#: ../includes/settings.php:777
 msgid "Enable if you want all plugin data to be deleted on deactivation."
 msgstr ""
 
-#: ../includes/settings.php:780
+#: ../includes/settings.php:789
 msgid "Enter additional button CSS classes separated by spaces."
 msgstr ""
 
-#: ../includes/settings.php:804
+#: ../includes/settings.php:813
 msgid "Bar opacity"
 msgstr ""
 
-#: ../includes/settings.php:946
+#: ../includes/settings.php:958
 msgid "Settings saved."
 msgstr ""
 
-#: ../includes/settings.php:953
+#: ../includes/settings.php:965
 msgid "Settings restored to defaults."
 msgstr ""
 
-#: ../includes/settings.php:978
+#: ../includes/settings.php:990
 msgid "Are you sure you want to reset these settings to defaults?"
 msgstr ""
 
@@ -780,9 +815,9 @@ msgstr ""
 msgid "You do not have permission to access this page."
 msgstr ""
 
-#: ../includes/welcome-api.php:97 ../includes/welcome-api.php:298
-#: ../includes/welcome-api.php:337 ../includes/welcome-api.php:463
-#: ../includes/welcome-api.php:535 ../includes/welcome-api.php:1013
+#: ../includes/welcome-api.php:97 ../includes/welcome-api.php:301
+#: ../includes/welcome-api.php:340 ../includes/welcome-api.php:466
+#: ../includes/welcome-api.php:538 ../includes/welcome-api.php:1016
 #: ../includes/welcome.php:70
 msgid "Unexpected error occurred. Please try again later."
 msgstr ""
@@ -795,31 +830,27 @@ msgstr ""
 msgid "Unable to create customer data."
 msgstr ""
 
-#: ../includes/welcome-api.php:185
+#: ../includes/welcome-api.php:206
 msgid "Unable to create payment mehotd."
 msgstr ""
 
-#: ../includes/welcome-api.php:199
-msgid "Unable to get customer data."
-msgstr ""
-
-#: ../includes/welcome-api.php:210
+#: ../includes/welcome-api.php:212
 msgid "No payment method token."
 msgstr ""
 
-#: ../includes/welcome-api.php:240
+#: ../includes/welcome-api.php:243
 msgid "Please accept the Terms of Service to proceed."
 msgstr ""
 
-#: ../includes/welcome-api.php:245 ../includes/welcome-api.php:434
+#: ../includes/welcome-api.php:248 ../includes/welcome-api.php:437
 msgid "Email is not allowed to be empty."
 msgstr ""
 
-#: ../includes/welcome-api.php:250 ../includes/welcome-api.php:439
+#: ../includes/welcome-api.php:253 ../includes/welcome-api.php:442
 msgid "Password is not allowed to be empty."
 msgstr ""
 
-#: ../includes/welcome-api.php:255
+#: ../includes/welcome-api.php:258
 msgid "Passwords do not match."
 msgstr ""
 

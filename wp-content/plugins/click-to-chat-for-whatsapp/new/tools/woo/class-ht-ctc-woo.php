@@ -268,6 +268,12 @@ class HT_CTC_WOO_Pages {
             $class_names .= " ctc_woo_schedule";
             $display_from_js = 'yes';
         } 
+
+        $style = $ht_ctc_woo_single_product['style'];
+
+        // if ( 'inline-block' == $woo_single_block_type ) {
+        //     $woo_single_block_type = "inline-flex";
+        // }
         
         if ('yes' == $display_from_js) {
             $css .= "display: none;";
@@ -275,8 +281,7 @@ class HT_CTC_WOO_Pages {
             $css .= "display: $woo_single_block_type;";
         }
 
-
-        $path = plugin_dir_path( HT_CTC_PLUGIN_FILE ) . 'new/inc/styles/style-' . $ht_ctc_woo_single_product['style']. '.php';
+        $path = plugin_dir_path( HT_CTC_PLUGIN_FILE ) . 'new/tools/woo/woo-single-styles/woo-style-' . $style. '.php';
 
         if ( is_file( $path ) ) {
             ?>

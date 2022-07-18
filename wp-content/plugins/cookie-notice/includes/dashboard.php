@@ -20,6 +20,9 @@ class Cookie_Notice_Dashboard {
 		// actions
 		add_action( 'wp_dashboard_setup', [ $this, 'wp_dashboard_setup' ], 11 );
 		add_action( 'admin_enqueue_scripts', [ $this, 'admin_scripts_styles' ] );
+		
+		// site status
+		add_filter( 'site_status_tests', array( $this, 'add_tests' ) );
 	}
 
 	/**
@@ -439,5 +442,51 @@ class Cookie_Notice_Dashboard {
 
 		return $html;
 	}
+	
+	/**
+	 * Add site test.
+	 * 
+	 * @param type $tests
+	 * @return array
+	 */
+	public function add_tests( $tests ) {
+        $tests['direct']['cookie_compliance_status'] = array(
+            'label' => __( 'Cookie Compliance Status', 'cookie-notice' ),
+            'test'  => array( $this, 'test_cookie_compliance' ),
+        );
+
+        return $tests;
+    }
+	
+	/**
+	 * Test for Cookie Compliance.
+	 * 
+	 * @return boolean
+	 */
+	public function test_cookie_compliance() {
+
+        if ( Cookie_Notice()->get_status() !== 'active' ) {
+			$setup_link = add_query_arg( array(
+				'page' => 'cookie-notice',
+				'welcome' => 1
+			), admin_url( 'admin.php' ) );
+
+			return array(
+				'label'       => __( 'Your site does not have Cookie Compliance', 'cookie-notice' ),
+				'status'      => 'critical',
+				'badge'       => array(
+					'label' => __( 'Cookie Notice', 'cookie-notice' ),
+					'color' => 'blue',
+				),
+				'description' => __( "Run Compliance Check to determine your site's compliance with updated data processing and consent rules under GDPR, CCPA and other international data privacy laws.", 'cookie-notice' ),
+				'actions'     => sprintf(
+					'<p><a href="%s" target="_blank" rel="noopener noreferrer">%s</a></p>',
+					$setup_link,
+					__( 'Run Compliance Check', 'cookie-notice' )
+				),
+				'test'        => 'cookie_compliance_status',
+			);
+		}
+    }
 
 }

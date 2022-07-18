@@ -15,9 +15,12 @@ class HT_CTC_Admin_Greetings {
     public $values = '';
 
     public function __construct() {
+        $this->hooks();
+    }
+
+    public function hooks() {
 
         add_action('admin_menu', [$this, 'menu'] );
-
 
 
         // only if options.php or this settings page..
@@ -256,6 +259,8 @@ class HT_CTC_Admin_Greetings {
                     ],
                     [
                         'template' => 'collapsible_start',
+                        'collapsible' => 'no',
+                        'ul_class' => 'ctc_g_opt_in',
                         'title' => __( 'Opt-in', 'click-to-chat-for-whatsapp'),
                     ],
                     [
@@ -276,8 +281,6 @@ class HT_CTC_Admin_Greetings {
                     ],
                     [
                         'template' => 'collapsible_end',
-                        'description' => "Currenlty available with 'Greetings-1', 'Greetings-2'",
-
                     ],
                     [
                         'title' => __( 'Display', 'click-to-chat-for-whatsapp'),
@@ -537,7 +540,13 @@ class HT_CTC_Admin_Greetings {
             wp_die( 'not allowed to modify - please contact admin ' );
         }
 
-        $textarea = [];
+        // formatting api - emoji ..
+        include_once HT_CTC_PLUGIN_DIR .'new/admin/admin_commons/ht-ctc-admin-formatting.php';
+
+        $textarea = [
+            'pre_filled',
+            'woo_pre_filled'
+        ];
 
         $editor = [
             'header_content',
@@ -545,10 +554,6 @@ class HT_CTC_Admin_Greetings {
             'bottom_content',
             'opt_in'
         ];
-
-        // formatting api - emoji ..
-        include_once HT_CTC_PLUGIN_DIR .'new/admin/admin_commons/ht-ctc-admin-formatting.php';
-
         $editor = apply_filters( 'ht_ctc_fh_greetings_setting_editor_values', $editor );
 
 
@@ -558,7 +563,7 @@ class HT_CTC_Admin_Greetings {
             if( isset( $input[$key] ) ) {
 
                 if ( is_array( $input[$key] ) ) {
-                    $new_input[$key] = map_deep( $input[$key], 'sanitize_text_field' );
+                    $new_input[$key] = map_deep( $input[$key], 'sanitize_textarea_field' );
                 } else {
                     if ( in_array( $key, $editor ) ) {
                         // editor
